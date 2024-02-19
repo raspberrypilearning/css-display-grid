@@ -1,59 +1,74 @@
-## Introduction
+To make a more precise layout on your webpage you can use a grid!
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+### Create a class
 
-### What you will make
+Create a class inside of your `style.css` file, it is best that you use a **class** or **id** for this. If you style a tag every version of that on your page will be a grid. 
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+Set the `display` property to `grid`. 
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
+Set a `height` - you can use `vh` for this or set a `px` value. 
+
+Define your **rows** (the `grid-template-rows` property) and **columns** (the `grid-template-columns`). 
+
+You can set the size of your rows in any of these ways:
++ Percentages - you can set the rows and columns as a `%` of the width or height
++ Fractions - you can set them as a `fr` of the width or height
++ Pixels - you can set the height as a direct `px` value 
+
+Here are some examples:
+
+--- code ---
+---
+language: css
+filename: style.css 
+---
+// A class
+.fact-holder {
+  display: grid;
+  height: 50vh;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
+--- /code ---
+
+--- code ---
+---
+language: css
+filename: style.css
+---
+// An ID
+#homepage-grid {
+  display: grid;
+  height: 80vh;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+--- /code ---
+
+### Add the grid to your HTML
+
+Once you have create your selector - add your class or id to a **HTML** element.
+
+--- code ---
+---
+language: html
+---
+
+<section class="fact-holder">
+
+</section>
+
+--- /code ---
+
+--- code ---
+---
+language: html
+---
+
+<div id="homepage-grid">
+
 </div>
---- /no-print ---
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
----
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+--- /code ---
