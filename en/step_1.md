@@ -1,12 +1,12 @@
-To make a more precise layout on your webpage you can use a grid!
+To make a more precise layout on your webpage, you can use a grid!
 
 ### Create a class
 
-Create a class inside of your `style.css` file, it is best that you use a **class** or **id** for this. If you style a tag every version of that on your page will be a grid. 
+Create a class inside of your `style.css` file — it is best to use a **class** or **id** for this. If you style a tag, every version of that tag on your page will be a grid. 
 
 Set the `display` property to `grid`. 
 
-Set a `height` - you can use `vh` for this or set a `px` value. 
+Set a `height`. You can use `vh` for this, or set a `px` value. 
 
 Define your **rows** (the `grid-template-rows` property) and **columns** (the `grid-template-columns`). 
 
@@ -49,7 +49,7 @@ filename: style.css
 
 ### Add the grid to your HTML
 
-Once you have create your selector - add your class or id to a **HTML** element.
+Once you have create your selector, add your class or id to an **HTML** element.
 
 --- code ---
 ---
