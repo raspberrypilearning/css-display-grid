@@ -11,9 +11,9 @@ Set a `height`. You can use `vh` for this, or set a `px` value.
 Define your **rows** (the `grid-template-rows` property) and **columns** (the `grid-template-columns`). 
 
 You can set the size of your rows in any of these ways:
-+ Percentages - you can set the rows and columns as a `%` of the width or height
-+ Fractions - you can set them as a `fr` of the width or height
-+ Pixels - you can set the height as a direct `px` value 
++ Percentages – you can set the rows and columns as a `%` of the width or height
++ Fractions – you can set them as a `fr` of the width or height
++ Pixels – you can set the height as a direct `px` value 
 
 Here are some examples:
 
