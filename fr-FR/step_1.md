@@ -1,22 +1,22 @@
-To make a more precise layout on your webpage, you can use a grid!
+Pour réaliser une mise en page plus précise sur ta page web, tu peux utiliser une grille !
 
-### Create a class
+### Créer une classe
 
-Create a class inside of your `style.css` file — it is best to use a **class** or **id** for this. If you style a tag, every version of that tag on your page will be a grid.
+Crée une classe dans ton fichier `style.css` : il est préférable d'utiliser une **classe** ou un **id** pour cela. Si tu stylises une balise, chaque version de cette balise sur ta page sera une grille.
 
-Set the `display` property to `grid`.
+Définis la propriété `display` sur `grid`.
 
-Set a `height`. You can use `vh` for this, or set a `px` value.
+Définir un `height` (hauteur). Tu peux utiliser `vh` pour cela, ou définir une valeur `px`.
 
-Define your **rows** (the `grid-template-rows` property) and **columns** (the `grid-template-columns`).
+Définis tes **lignes** (la propriété `grid-template-rows`) et **colonnes** (le `grid-template-columns`).
 
-You can set the size of your rows in any of these ways:
+Tu peux définir la taille de tes lignes de l'une de ces manières :
 
-- Percentages – you can set the rows and columns as a `%` of the width or height
-- Fractions – you can set them as a `fr` of the width or height
-- Pixels – you can set the height as a direct `px` value
+- Pourcentages : tu peux définir les lignes et les colonnes comme un `%` de la largeur ou de la hauteur
+- Fractions : tu peux les définir comme un `fr` de la largeur ou de la hauteur
+- Pixels : tu peux définir la hauteur comme une valeur `px` directe
 
-Here are some examples:
+Voici quelques exemples :
 
 ## --- code ---
 
@@ -24,7 +24,7 @@ language: css
 filename: style.css
 ---------------------------------------------------
 
-// A class
+// Une classe
 .fact-holder {
 display: grid;
 height: 50vh;
@@ -40,7 +40,7 @@ language: css
 filename: style.css
 ---------------------------------------------------
 
-// An ID
+// Un ID
 \#homepage-grid {
 display: grid;
 height: 80vh;
@@ -50,9 +50,9 @@ grid-template-columns: 1fr 1fr;
 
 \--- /code ---
 
-### Add the grid to your HTML
+### Ajouter la grille à ton HTML
 
-Once you have create your selector, add your class or id to an **HTML** element.
+Une fois ton sélecteur créé, ajoute ta classe ou ton ID à un élément **HTML**.
 
 ## --- code ---
 
