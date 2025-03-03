@@ -1,22 +1,22 @@
-To make a more precise layout on your webpage, you can use a grid!
+Om een nauwkeurigere indeling van jouw webpagina te maken, kun je een raster gebruiken!
 
-### Create a class
+### Creëer een class (klasse)
 
-Create a class inside of your `style.css` file — it is best to use a **class** or **id** for this. If you style a tag, every version of that tag on your page will be a grid.
+Maak een klasse aan binnen je `style.css` bestand - het is het beste om hier een **class** of **id** voor te gebruiken. Als je een tag opmaakt, wordt elke versie van die tag op je pagina een raster.
 
-Set the `display` property to `grid`.
+Stel de eigenschap `display` in op `grid`.
 
-Set a `height`. You can use `vh` for this, or set a `px` value.
+Stel een `height` (hoogte) in. Je kunt hiervoor `vh` gebruiken of een `px`-waarde instellen.
 
-Define your **rows** (the `grid-template-rows` property) and **columns** (the `grid-template-columns`).
+Definieer je **rijen** (de eigenschap `grid-template-rows`) en **kolommen** (de eigenschap `grid-template-columns`).
 
-You can set the size of your rows in any of these ways:
+Je kunt de grootte van jouw rijen op een van de volgende manieren instellen:
 
-- Percentages – you can set the rows and columns as a `%` of the width or height
-- Fractions – you can set them as a `fr` of the width or height
-- Pixels – you can set the height as a direct `px` value
+- Percentages – je kunt de rijen en kolommen instellen als een `%` van de breedte of hoogte
+- Delen - je kunt ze instellen als 'fr' van de breedte of hoogte
+- Pixels - je kunt de hoogte instellen als een directe 'px' waarde
 
-Here are some examples:
+Hier zijn enkele voorbeelden:
 
 ## --- code ---
 
@@ -24,7 +24,7 @@ language: css
 filename: style.css
 ---------------------------------------------------
 
-// A class
+// Een klasse
 .fact-holder {
 display: grid;
 height: 50vh;
@@ -40,7 +40,7 @@ language: css
 filename: style.css
 ---------------------------------------------------
 
-// An ID
+// Een ID
 \#homepage-grid {
 display: grid;
 height: 80vh;
@@ -50,9 +50,9 @@ grid-template-columns: 1fr 1fr;
 
 \--- /code ---
 
-### Add the grid to your HTML
+### Voeg het raster toe aan je HTML
 
-Once you have create your selector, add your class or id to an **HTML** element.
+Zodra je je selector hebt gemaakt, voeg je je klasse of id toe aan een **HTML** element.
 
 ## --- code ---
 
