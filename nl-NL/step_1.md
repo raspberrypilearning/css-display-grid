@@ -12,9 +12,9 @@ Definieer je **rijen** (de eigenschap `grid-template-rows`) en **kolommen** (de 
 
 Je kunt de grootte van jouw rijen op een van de volgende manieren instellen:
 
-- Percentages – je kunt de rijen en kolommen instellen als een `%` van de breedte of hoogte
-- Delen - je kunt ze instellen als 'fr' van de breedte of hoogte
-- Pixels - je kunt de hoogte instellen als een directe 'px' waarde
+- Percentages – je kunt de rijen en kolommen instellen als een `%` van de breedte of de hoogte
+- Delen - je kunt ze instellen als `fr` van de breedte of hoogte
+- Pixels - je kunt de hoogte instellen als een directe `px`-waarde
 
 Hier zijn enkele voorbeelden:
 
